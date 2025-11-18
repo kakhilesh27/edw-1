@@ -8,7 +8,9 @@ export const initServices = () => {
             "l2": "optimization",
             "link_img_path": "../images/arrow1.svg",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c1.svg"
+            "card_right_img_path": "../images/c1.svg",
+            "href": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+            
         },
 
         {
@@ -16,7 +18,8 @@ export const initServices = () => {
             "l2": "advertising",
             "link_img_path": "../images/arrow1.svg",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c2.svg"
+            "card_right_img_path": "../images/c2.svg",
+            "href": "https://corporatefinanceinstitute.com/resources/valuation/pay-per-click-ppc/"
         },
 
         {
@@ -24,7 +27,8 @@ export const initServices = () => {
             "l2": "Marketing",
             "link_img_path": "../images/arrow2.png",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c3.svg"
+            "card_right_img_path": "../images/c3.svg",
+            "href": " https://www.upgrad.com/digital-marketing-and-communication-pgc-mica-lpv1/?utm_source[…]-CG6Y_iaKyjGaLDHrSDbl33nV-2F3PhCbYhE_j8Ro4a26IihoCI9kQAvD_BwE"
         },
 
         {
@@ -32,7 +36,8 @@ export const initServices = () => {
             "l2": "Marketing",
             "link_img_path": "../images/arrow1.svg",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c4.svg"
+            "card_right_img_path": "../images/c4.svg",
+            "href": " https://mailchimp.com/marketing-glossary/email-marketing/"
         },
 
         {
@@ -40,7 +45,8 @@ export const initServices = () => {
             "l2": "Creation",
             "link_img_path": "../images/arrow1.svg",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c5.png"
+            "card_right_img_path": "../images/c5.png",
+            "href": "https://www.conductor.com/academy/content-creation/"
         },
 
         {
@@ -48,7 +54,8 @@ export const initServices = () => {
             "l2": "Tracking",
             "link_img_path": "../images/arrow2.png",
             "link_txt": "Learn more",
-            "card_right_img_path": "../images/c6.svg"
+            "card_right_img_path": "../images/c6.svg",
+            "href": "https://marketingplatform.google.com/about/analytics/"
         }
 
 
@@ -62,7 +69,7 @@ export const initServices = () => {
         let l1 = document.createElement('div');
         let l2 = document.createElement('div');
         let l3 = document.createElement('div');
-        let link = document.createElement('div');
+        let link = document.createElement('a');
         let link_img = document.createElement('img');
         let link_txt = document.createElement('div');
         let card_right = document.createElement('div');
@@ -84,8 +91,10 @@ export const initServices = () => {
 
         l1.textContent = content[idx]["l1"];
         l2.textContent = content[idx]["l2"];
+        link.href = content[idx]["href"];
+        link.target = "_blank";
         link_img.src = content[idx]["link_img_path"];
-        link_txt.textContent = content[idx]['link_txt']
+        link_txt.textContent = content[idx]['link_txt'];
         img_right.src = content[idx]["card_right_img_path"];
 
 
