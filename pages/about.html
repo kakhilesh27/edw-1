@@ -19,20 +19,7 @@
             <!-- navbar -->
 
             <nav class="navbar" id="">
-                <div class="frame9">
-                    <a href="/"><img src="../images/Frame 9.png" alt="logo"></a>
-                </div>
-
-                <div class="frame10">
-                    <li><a href="">About us</a></li>
-                    <li><a href="./services.html">Services</a></li>
-                    <li><a href="/#cases">Use Cases</a></li>
-                    <li><a href="./team.html">Team</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><button>Request a quote</button></li>
-                </div>
-
-                <img id="menu" width="36px" height="36px" src="../images/menu.png" alt="">
+                
             </nav>
 
         <!-- ----------------------------------------------------------------------------------------------- -->
@@ -104,58 +91,7 @@
          <!-- footer -->
 
         <footer>
-            <section class="footer-block">
-                <div class="navigation-contacts">
-                    <div class="f-elements">
-                        <a href="#"><img class="f-logo" src="../images/logo-bw.png" alt=""></a>
-                        <ul class="navigation">
-                            <li><a href="#">About us</a></li>
-                            <li><a href="/#services">Services</a></li>
-                            <li><a href="/#cases">Use Cases</a></li>
-                            <li><a href="/#team">Team</a></li>
-                            <li><a href="./blog.html">Blog</a></li>
-                        </ul>
-                        <div class="social-icons">
-                            <img src="../images/f-linkedin.png" alt="">
-                            <img src="../images/f-facebook.png" alt="">
-                            <img src="../images/f-twitter.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="frame26">
-                        <div class="contact-us">
-                            <div class="contact-us-header">
-                                <div class="contact-us-header-label">
-                                    <h4>Contact us</h4>
-                                </div>
-                                <div class="contact-us-header-label"></div>
-                                <div class="contact-us-header-label"></div>
-                            </div>
-                            <div class="contact-us-info">
-                                <p class="contact-us-info-p">Email: info@positivus.com</p>
-                                <p class="contact-us-info-p">Phone: 555-567-8901</p>
-                                <p class="contact-us-info-p">Address: 1234 Main St <br/>Moonstone City, Stardust State 12345</p>
-                            </div>
-                        </div>
-                        <div class="subs-block">
-                            <div class="subs-block-field">
-                                <p>Email</p>
-                            </div>
-                            <button class="subs-block-button" 
-                                data-text-full = "Subscribe to news"
-                                data-text-short = "Subscribe"
-                            ></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="f-line-text">
-                    <div class="f-line"></div>
-                    <div class="f-text">
-                        <p>© 2023 Positivus. All Rights Reserved.</p>
-                        <p id="f-text-pp">Privacy Policy</p>
-                    </div>
-                </div>
-            </section>
+            
         </footer>
 
 
@@ -170,8 +106,51 @@
 
     <!-- import - export work avvalante -->
     <script type="module">
-        import {initRadioButtons} from "../js/radio.js"
+        import {initNavbar} from "../js/navbar.js";
+        import {initRadioButtons} from "../js/radio.js";
+        import {initFooter} from "../js/footer.js";
+
+        const frame10_data = [
+            {
+                'tag': 'a',
+                'href': '',
+                'content': 'About us'
+            },
+
+            {
+                'tag': 'a',
+                'href': './services.html',
+                'content': 'Services'
+            },
+
+            {
+                'tag': 'a',
+                'href': '/#cases',
+                'content': 'Use Cases'
+            },
+
+            {
+                'tag': 'a',
+                'href': './team.html',
+                'content': 'Team'
+            },
+
+            {
+                'tag': 'a',
+                'href': './blog.html',
+                'content': 'Blog'
+            },
+
+            {
+                'tag': 'button',
+                'href': '',
+                'content': 'Request a quote'
+            },
+        ];
+
+        initNavbar(frame10_data);
         initRadioButtons();
+        initFooter();
     </script>
 
 </body>

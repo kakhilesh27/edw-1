@@ -1,3 +1,4 @@
+import {initNavbar} from "./js/navbar.js";
 import {initRadioButtons} from  "./js/radio.js";
 import {initLogotypes} from "./js/logotypes.js";
 import {initServices} from "./js/services.js";
@@ -7,32 +8,20 @@ import {initTeam} from "./js/team.js";
 import {initTestimonialCards} from "./js/testimonialCards.js";
 import {initSlider} from "./js/slider.js";
 import {initToast} from "./js/toast.js";
-
-initRadioButtons();
-initLogotypes();
-initServices();
-initCaseStudies();
-initProcessBlock();
-initTeam();
-initTestimonialCards();
-initSlider();
-initToast();
+import { initFooter } from "./js/footer.js";
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export const initMain = (data) => {
+    initNavbar(data);
+    initRadioButtons();
+    initLogotypes();
+    initServices();
+    initCaseStudies();
+    initProcessBlock();
+    initTeam();
+    initTestimonialCards();
+    initSlider();
+    initToast();
+    initFooter();
+};
 
