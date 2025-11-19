@@ -27,12 +27,7 @@
 
 
         <div class="team-subheading" id="team">
-            <div class="team-header">
-                <div class="team-label"><h2>Team</h2></div>
-                <div class="team-label"></div>
-                <div class="team-label"></div>
-            </div>
-            <div class="team-text"><p>Meet the skilled and experienced team behind our successful digital marketing strategies</p></div>
+        
         </div>
 
 
@@ -62,6 +57,7 @@
     <!-- import - export work avvalante -->
     <script type="module">
         import {initNavbar} from "./../js/navbar.js";
+        import {initSubheading} from "./../js/subheading.js";
         import {initTeam} from "./../js/team.js";
         import {initFooter} from "./../js/footer.js";
 
@@ -103,7 +99,21 @@
             },
         ];
 
+
+        const subheading_data = [
+            {
+                'subheading_div_classname': 'team-subheading',
+                'header_div_classname': 'team-header',
+                'label_classname': 'team-label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'team-text',
+                'label_h2_content': 'Team',
+                'subheading_text_content': 'Meet the skilled and experienced team behind our successful digital marketing strategies'
+            }
+        ];
+
         initNavbar(frame10_data);
+        initSubheading(subheading_data);
         initTeam();
         initFooter();
     </script>

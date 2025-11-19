@@ -26,62 +26,12 @@
          <!-- contact section -->
 
         <div class="contact-subheading" id="contact-us">
-            <div class="contact-header">
-                <div class="contact-label">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="contact-label"></div>
-                <div class="contact-label"></div>
-            </div>
-            <p class="contact-text">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+            
         </div>
 
 
         <section class="contact-block">
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="contact-radio-btns">
-                        <div class="contact-radio-btn1">
-                            <img id="contact-radio-btn1-img" src="../images/select_rb.png" alt="">
-                            <p class="contact-radio-btn1-p">Say hi</p>
-                        </div>
-                        <div class="contact-radio-btn2">
-                            <img id="contact-radio-btn2-img" src="../images/unselect_rb.png" alt="">
-                            <p class="contact-radio-btn2-p">Get a Quote</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-fields">
-                        <div id="field1">
-                            <div>
-                                <p>Name</p>
-                                <span></span>
-                            </div>
-                            <input type="text" name="name" id="name" placeholder="Name">
-                        </div>
-
-                        <div id="field2">
-                            <div>
-                                <p>Email*</p>
-                                <span>This field is required</span>
-                            </div>
-                            <input type="email" name="email" id="email" placeholder="Email" required>
-                        </div>
-
-                        <div id="field3">
-                            <div>
-                                <p>Message*</p>
-                                <span>This field is required</span>
-                            </div>
-                            <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        </div>
-
-                    </div>
-                    
-                    <button>Send Message</button>
-                </form>
-            </div>
-            <img class="contact-illustration" src="../images/contact-Illustration.png" alt="">
+            
         </section>
 
 
@@ -107,9 +57,14 @@
     <!-- import - export work avvalante -->
     <script type="module">
         import {initNavbar} from "../js/navbar.js";
+        import {initSubheading} from "../js/subheading.js";
+        import {initContactForm} from "../js/contact.js";
         import {initRadioButtons} from "../js/radio.js";
+        import {initToast} from "../js/toast.js";
         import {initFooter} from "../js/footer.js";
 
+
+        // idi navbar kosam
         const frame10_data = [
             {
                 'tag': 'a',
@@ -148,8 +103,23 @@
             },
         ];
 
+        const subheading_data = [
+            {
+                'subheading_div_classname': 'contact-subheading',
+                'header_div_classname': 'contact-header',
+                'label_classname': 'contact-label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'contact-text',
+                'label_h2_content': 'Contact Us',
+                'subheading_text_content': "Connect with Us: Let's Discuss Your Digital Marketing Needs"
+            }
+        ];
+
         initNavbar(frame10_data);
+        initSubheading(subheading_data);
+        initContactForm();
         initRadioButtons();
+        initToast();
         initFooter();
     </script>
 

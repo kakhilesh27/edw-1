@@ -27,12 +27,7 @@
 
 
         <div id="services" class="services-subheading">
-            <div class="services-header">
-                <div class="label"><h2>Services</h2></div>
-                <div class="label"></div>
-                <div class="label"></div>
-            </div>
-            <div id="services-text">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</div>
+            
         </div>
 
         
@@ -66,6 +61,7 @@
     <!-- import - export work avvalante -->
     <script type="module">
         import {initNavbar} from "./../js/navbar.js";
+        import {initSubheading} from "./../js/subheading.js";
         import {initServices} from "./../js/services.js";
         import {initFooter} from "./../js/footer.js";
 
@@ -108,7 +104,24 @@
             },
         ];
 
+
+
+        const subheading_data = [
+            {
+                'subheading_div_classname': 'services-subheading',
+                'header_div_classname': 'services-header',
+                'label_classname': 'label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'services-text',
+                'label_h2_content': 'Services',
+                'subheading_text_content': 'At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
+            }
+        ];
+
+
+
         initNavbar(frame10_data);
+        initSubheading(subheading_data);
         initServices();
         initFooter();
     </script>

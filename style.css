@@ -209,7 +209,7 @@ header {
     padding: 0 0.4375rem;
 }
 
-#services-text {
+.services-text {
     width: 36.25rem; 
     flex-shrink: 0;
     font-size: 1.125rem; 
@@ -649,7 +649,7 @@ header {
     height: 24.625rem; 
     flex-shrink: 0;
 
-    margin-top: 5rem; 
+    margin-top: 6.25rem; 
 }
 
 .cta {
@@ -767,7 +767,7 @@ header {
     padding: 0 0.4375rem;
 }
 
-#case-studies-text {
+.case-studies-text {
     width: 36.25rem; 
     flex-shrink: 0;
     font-size: 1.125rem;

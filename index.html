@@ -52,12 +52,7 @@
 
 
         <div id="services" class="services-subheading">
-            <div class="services-header">
-                <div class="label"><h2>Services</h2></div>
-                <div class="label"></div>
-                <div class="label"></div>
-            </div>
-            <div id="services-text">At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:</div>
+           
         </div>
 
         
@@ -97,12 +92,7 @@
          <!-- case studies section -->
 
         <div class="case-studies-subheading" id="cases">
-            <div class="case-studies-header">
-                <div class="label"><h2>Case Studies</h2></div>
-                <div class="label"></div>
-                <div class="label"></div>
-            </div>
-            <div id="case-studies-text">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</div>
+            
         </div>
 
 
@@ -120,12 +110,7 @@
          <!-- process-block -->
 
         <div class="process-subheading">
-            <div class="process-header">
-                <div class="label"><h2>Our Working Process</h2></div>
-                <div class="label"></div>
-                <div class="label"></div>
-            </div>
-            <div class="process-text"><p>Step-by-Step Guide to Achieving Your Business Goals</p></div>
+            
         </div>
 
 
@@ -144,12 +129,7 @@
 
 
         <div class="team-subheading" id="team">
-            <div class="team-header">
-                <div class="team-label"><h2>Team</h2></div>
-                <div class="team-label"></div>
-                <div class="team-label"></div>
-            </div>
-            <div class="team-text"><p>Meet the skilled and experienced team behind our successful digital marketing strategies</p></div>
+            
         </div>
 
 
@@ -173,14 +153,7 @@
          <!-- testimonials -->
 
         <div class="testimonials-subheading">
-            <div class="testimonials-header">
-                <div class="testimonials-label">
-                    <h2 class="testimonials-h2">Testimonials</h2>
-                </div>
-                <div class="testimonials-label"></div>
-                <div class="testimonials-label"></div>
-            </div>
-            <p class="testimonials-text">Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services</p>
+            
         </div>
 
 
@@ -219,62 +192,12 @@
          <!-- contact section -->
 
         <div class="contact-subheading" id="contact-us">
-            <div class="contact-header">
-                <div class="contact-label">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="contact-label"></div>
-                <div class="contact-label"></div>
-            </div>
-            <p class="contact-text">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
+           
         </div>
 
 
         <section class="contact-block">
-            <div class="contact-content">
-                <form class="contact-form">
-                    <div class="contact-radio-btns">
-                        <div class="contact-radio-btn1">
-                            <img id="contact-radio-btn1-img" src="images/select_rb.png" alt="">
-                            <p class="contact-radio-btn1-p">Say hi</p>
-                        </div>
-                        <div class="contact-radio-btn2">
-                            <img id="contact-radio-btn2-img" src="images/unselect_rb.png" alt="">
-                            <p class="contact-radio-btn2-p">Get a Quote</p>
-                        </div>
-                    </div>
-
-                    <div class="contact-fields">
-                        <div id="field1">
-                            <div>
-                                <p>Name</p>
-                                <span></span>
-                            </div>
-                            <input type="text" name="name" id="name" placeholder="Name">
-                        </div>
-
-                        <div id="field2">
-                            <div>
-                                <p>Email*</p>
-                                <span>This field is required</span>
-                            </div>
-                            <input type="email" name="email" id="email" placeholder="Email" required>
-                        </div>
-
-                        <div id="field3">
-                            <div>
-                                <p>Message*</p>
-                                <span>This field is required</span>
-                            </div>
-                            <textarea name="message" id="message" placeholder="Message" required></textarea>
-                        </div>
-
-                    </div>
-                    
-                    <button>Send Message</button>
-                </form>
-            </div>
-            <img class="contact-illustration" src="images/contact-Illustration.png" alt="">
+            
         </section>
 
 
@@ -339,7 +262,76 @@
             },
         ];
 
-        initMain(frame10_data);
+
+        const subheading_data = [
+
+            {
+                'subheading_div_classname': 'contact-subheading',
+                'header_div_classname': 'contact-header',
+                'label_classname': 'contact-label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'contact-text',
+                'label_h2_content': 'Contact Us',
+                'subheading_text_content': "Connect with Us: Let's Discuss Your Digital Marketing Needs"
+            },
+
+            {
+                'subheading_div_classname': 'testimonials-subheading',
+                'header_div_classname': 'testimonials-header',
+                'label_classname': 'testimonials-label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'testimonials-text',
+                'label_h2_content': 'Testimonials',
+                'subheading_text_content': 'Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services'
+            },
+
+            {
+                'subheading_div_classname': 'team-subheading',
+                'header_div_classname': 'team-header',
+                'label_classname': 'team-label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'team-text',
+                'label_h2_content': 'Team',
+                'subheading_text_content': 'Meet the skilled and experienced team behind our successful digital marketing strategies'
+            },
+
+            {
+                'subheading_div_classname': 'process-subheading',
+                'header_div_classname': 'process-header',
+                'label_classname': 'label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'process-text',
+                'label_h2_content': 'Our Working Process',
+                'subheading_text_content': 'Step-by-Step Guide to Achieving Your Business Goals'
+            },
+
+            {
+                'subheading_div_classname': 'case-studies-subheading',
+                'header_div_classname': 'case-studies-header',
+                'label_classname': 'label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'case-studies-text',
+                'label_h2_content': 'Case Studies',
+                'subheading_text_content': 'Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies'
+            },
+
+            {
+                'subheading_div_classname': 'services-subheading',
+                'header_div_classname': 'services-header',
+                'label_classname': 'label',
+                'label_h2_classname': 'testimonials-h2',
+                'subheading_text_classname': 'services-text',
+                'label_h2_content': 'Services',
+                'subheading_text_content': 'At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:'
+            }
+        ];
+
+        initMain(
+            {
+                'frame10_data': frame10_data, 
+                'subheading_data': subheading_data
+            }
+        );
     </script>
 
 </body>
