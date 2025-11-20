@@ -1,6 +1,7 @@
 export const initTeam = () => {
     const group_of_cards = document.getElementsByClassName('group-of-cards')[0];
 
+    //use json
     const team_data = [
         {
             "goc_pic_img_path": "../images/goc-pic.png",
@@ -54,7 +55,8 @@ export const initTeam = () => {
 
 
 
-    for(let idx in team_data) {
+    for(let idx in team_data) { //es6 method should be used
+        // create a function for createElement and use that everywhere
         let goc_card = document.createElement('div');
         let goc_content = document.createElement('div');
         let goc_person = document.createElement('div');

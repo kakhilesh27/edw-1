@@ -8,7 +8,7 @@ export const initNavbar = (frame10_data) => {
     const frame10 = document.createElement('div');
     const list_items_count = 6;
 
-    for(let i=0; i<list_items_count; i++) {
+    for(let i=0; i<list_items_count; i++) { // es6 method should be used
         let li = document.createElement('li');
 
         let tag = frame10_data[i]['tag'];

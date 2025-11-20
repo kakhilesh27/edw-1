@@ -1,6 +1,7 @@
 export const initProcessBlock = () => {
     const process_block = document.getElementsByClassName('process-block')[0];
 
+    //use json
     const process_block_content = [
         {
             "pb_number": "01",
@@ -41,8 +42,9 @@ export const initProcessBlock = () => {
 
 
 
-    for(let idx in process_block_content) {
+    for(let idx in process_block_content) { // es6 method should be used
 
+        // can create a function and use that everywhere createElement is used
         let pb_card = document.createElement('div');
         let pb_content = document.createElement('div');
         let pb_label = document.createElement('div');

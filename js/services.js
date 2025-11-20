@@ -2,6 +2,7 @@ export const initServices = () => {
     const cards_section = document.getElementsByClassName("cards-section")[0];
 
 
+    //use json
     const content = [
         {
             "l1": "Search engine",
@@ -62,7 +63,8 @@ export const initServices = () => {
     ]
 
 
-    for(let idx in content) {
+    for(let idx in content) { //es6 method should be used
+        // create a function for createElement and use that everywhere
         let card_section = document.createElement('section');
         let card_left = document.createElement('div');
         let heading = document.createElement('div');

@@ -1,6 +1,7 @@
 export const initTestimonialCards = () => {
     const testimonial_cards = document.getElementsByClassName('testimonial-cards')[0];
 
+    // use json
     const testimonial_cards_data = [
         {
             "testimonial_card_img_path": "images/bubble.png",
@@ -41,7 +42,7 @@ export const initTestimonialCards = () => {
 
 
 
-    for(let idx in testimonial_cards_data) {
+    for(let idx in testimonial_cards_data) { //es6 method should be used
         let testimonial_card = document.createElement('div');
         let testimonial_card_img = document.createElement('img');
         let testimonial_content = document.createElement('div');

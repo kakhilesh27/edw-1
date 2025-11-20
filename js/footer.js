@@ -1,7 +1,7 @@
 export const initFooter = () => {
     const footer = document.getElementsByTagName('footer')[0];
 
-
+    // use json
     const navigation_data = [
         {
             'href': '/#contact-us',
@@ -29,7 +29,7 @@ export const initFooter = () => {
         }
     ];
 
-
+    
     const social_icons_data = [
         {'src': '../images/f-linkedin.png'},
         {'src': '../images/f-facebook.png'},
